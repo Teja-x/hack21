@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--NavBar Section-->
+        <div class="header">
+            <div class="inner-header"><a href="#">Smart Education<a href=""></a></div>
+            <div class="level">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Student</a></li>
+                    <li><a href="#">Faculty</a></li>
+                    <li class="nav-item"><a href="forums.html">Forums</a></li>
+                    <li class="nav-item"><a href="detail.html">Queries</a></li>
+                    <li class="nav-item"><a href="posts.html">Videos</a></li>
+            
+                </ul>
+            </div>
+        </div>
+        <!--SearchBox Section-->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="Everything">Faculty</option>
+                    <option value="Titles">Department</option>
+                
+                </select>
+                <input type="text" name="q" placeholder="Search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    <div class="container">
+        <!--Navigation-->
+        
+
+        <!--Topic Section-->
+        <div class="topic-container">
+            <!--Original thread-->
+            <div class="head">
+                <div class="authors">Faculty</div>
+                <div class="content">Faculty Description</div>
+            </div>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="">Faculty 1</a></div>
+                    <div>Role</div>
+                    <img src="download.png" alt="">
+                    
+                </div>
+                <div class="content">
+                    Just a sample description of a faculty.
+                    <br>To see how it looks like.
+                    <br><br>
+                    
+                    <br>
+                 
+                   
+                    <br>
+                    <div class="comment">
+                        <button onclick="showComment()">Ask</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Comment Area-->
+        <div class="comment-area hide" id="comment-area">
+            <textarea name="comment" id="" placeholder="Ask here... "></textarea>
+            <input type="submit" value="Submit">
+        </div>
+
+        <!--Comments Section-->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="">Faculty 2</a></div>
+                    <div>Role</div>
+                    <img src="download.png" alt="">
+                    
+                </div>
+                <div class="content">
+                    Just a sample description of a faculty.
+                    <br>To see how it looks like.
+                    <br><br>
+                    
+                    <br>
+                    <br>
+                    <div class="comment">
+                        <button onclick="showReply()">Ask</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Reply Area-->
+        <div class="comment-area hide" id="reply-area">
+            <textarea name="reply" id="" placeholder="Ask here... "></textarea>
+            <input type="submit" value="Submit">
+        </div>
+
+
+        <!--Another Comment With replies-->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="">Faculty 3</a></div>
+                    <div>Role</div>
+                    <img src="download.png" alt="">
+                    
+                </div>
+                <div class="content">
+                    Just a sample description of a faculty.
+                    <br>To see how it looks like.
+                    <br><br>
+                    
+                    <br>
+                    <br>
+                    <div class="comment">
+                        <button onclick="showReply()">Ask</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Reply Area-->
+        <div class="comment-area hide" id="reply-area">
+            <textarea name="reply" id="" placeholder="Ask here... "></textarea>
+            <input type="submit" value="Submit">
+        </div>
+        <div class="pagination">
+                pages: <a href="">1</a><a href="">2</a><a href="">3</a>
+            </div>
+
+        
+
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
